@@ -20,14 +20,14 @@ test('should be falsy',() =>{
         
 });
 //toBe works fine for string
-test('user name should be Shailesh Kanbi', function(){
-    expect(functions.createUser()).toBe('Shailesh Kanbi');
+test('user name should be Sam Johnson', function(){
+    expect(functions.createUser()).toBe('Sam Johnson');
 });
 // toEqual for Object comparison
-test('user name as object should be Shailesh Kanbi', function(){
+test('user name as object should be Sam Johnson', function(){
     expect(functions.createUserObject()).toEqual({
-        "firstName": "Shailesh", 
-        "lastname": "Kanbi"});
+        "firstName": "Sam", 
+        "lastname": "Johnson"});
 });
 //less than or greater than
 test('should be under 1600', function(){
@@ -36,13 +36,13 @@ test('should be under 1600', function(){
     expect(num1+num2).toBeLessThan(100);
 });
 //Regex
-test('There is no s in Paridhi',function(){
-    expect('Paridhi').not.toMatch(/s/);
+test('There is no s in Mary',function(){
+    expect('Mary').not.toMatch(/s/);
 });
 //Arrays
-test('Vanita should be in house name',function(){
-    housename = ['Vanita','Shailesh','Paridhi'];
-    expect(housename).toContain('Vanita');
+test('Jennifer should be in house name',function(){
+    housename = ['Jennifer','Mary','Sam'];
+    expect(housename).toContain('Jennifer');
 });
 
 //working with async data
